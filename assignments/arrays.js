@@ -72,10 +72,10 @@ console.log(inventory[0].car_make, inventory[0].car_model);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [];
-for (let i = 0; i < inventory.length; i++) {
-    carModels.push(inventory[i].car_model)
-    carModels.sort();
+let carModels = [];                             //declaring carModels array
+for (let i = 0; i < inventory.length; i++) {    // let i start at zero index as long as the indexes are less than the length of the inventory array go to next
+    carModels.push(inventory[i].car_model)     // for every index add the inventory's car_model value to the carModels array
+    carModels.sort();                           // sort the values of the array alphabetically
 }
 console.log(carModels);
 // ==== Challenge 4 ====
